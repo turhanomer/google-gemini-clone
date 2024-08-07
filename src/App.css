@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-group{
+  position: sticky;
+  bottom: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px; 
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #bdc3c7;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+
+.sidebar h2, .sidebar p {
+  color: #818181;
+  padding: 8px 8px 8px 32px;
+}
+
+.sidebar h2:hover, .sidebar p:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+#main {
+  transition: margin-left .3s;
+  padding: 16px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #bdc3c7;
+  color: black;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+@media screen and (max-width: 1060px) {
+  #inputId{
+    border-radius: 10px;
+  }
+  input{
+    float: right;
+  }
+  span{
+    float: right;
+  }
+}
