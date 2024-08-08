@@ -18,12 +18,11 @@ body {
   position: fixed;
   top: 0;
   left: -250px;
-  background-color: #bdc3c7;
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
+  background-color: #bdc3c7;
 }
-
 
 .sidebar h2, .sidebar p {
   color: #818181;
@@ -36,7 +35,7 @@ body {
 
 .closebtn {
   position: absolute;
-  top: 0;
+  top: 6px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
@@ -48,7 +47,6 @@ body {
 
 #main {
   transition: margin-left .3s;
-  padding: 16px;
 }
 
 .openbtn {
@@ -62,6 +60,10 @@ body {
   top: 10px;
   left: 10px;
   border-radius: 10px;
+}
+
+.openbtn:hover{
+  background-color: #989898;
 }
 
 .sidebar.show {
@@ -79,3 +81,4 @@ body {
     float: right;
   }
 }
+
