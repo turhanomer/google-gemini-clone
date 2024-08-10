@@ -85,3 +85,28 @@ body {
 .card-body:hover{
   cursor: pointer;
 }
+
+@keyframes slideInAndGrow {
+  0% {
+    transform: translateY(20px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+#chat{
+  float: left;
+  margin-top: 40px;
+  margin-left: 15px;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+#chat:active{
+  background-color: #1e2937;
+}
