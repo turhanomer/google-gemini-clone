@@ -82,3 +82,6 @@ body {
   }
 }
 
+.card-body:hover{
+  cursor: pointer;
+}

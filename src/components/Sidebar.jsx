@@ -30,7 +30,7 @@ const Sidebar = () => {
          className="closebtn" onClick={closeNav}>
           ×
         </button>
-        <h2>Sidebar</h2>
+        <h2>GEMINI</h2>
         <p>Some content in the Sidebar.</p>
       </div>
 
@@ -43,7 +43,7 @@ const Sidebar = () => {
           className="openbtn"
           onClick={openNav}
         >
-          ☰ Open Sidebar
+          ☰ GEMINI
         </button>
       </div>
     </div>

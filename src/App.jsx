@@ -5,6 +5,7 @@ import Input from './components/Input'
 import Sidebar from './components/Sidebar'
 import Mode from "./DarkMode/Mode"
 import ThemeProvider from './components/ThemeContext';
+import Card from './components/Card';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Mode />
       <Input />
       <Sidebar />
+      <Card />
     </ThemeProvider>
     </>
   )
