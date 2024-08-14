@@ -22,7 +22,6 @@ const ContextProvider = (props) => {
     setResultData(response)
     setLoading(false)
     setInput("")
-
   };
 
   const contextValue = {

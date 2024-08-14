@@ -81,12 +81,13 @@ function Input() {
           </div>
         </>
       ) : (
-        <div>
+        <div style={{color: darkMode ? "white" : "black"}} id="main">
           <div className="result-title">
             <p>{recentPrompt}</p>
           </div>
           <div className="result-data">
           <svg
+          style={{float: "left"}}
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
