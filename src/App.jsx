@@ -46,6 +46,7 @@ function Home({ showResult }) {
           <h2
             style={{
               display: "flex",
+              textAlign: "center",
               justifyContent: "center",
               fontSize: "36px",
               fontWeight: "lighter",

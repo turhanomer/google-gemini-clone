@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "../App.css";
 import "../DarkMode/Mode.css";
 import { useTheme } from "./ThemeContext";
+import { Context } from "../context/Context";
 
 const Sidebar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const {onSent, prevPrompts, setRecentPrompt, newChat} = useContext(Context);
+
+  const loadPrompt = async (prompt) => {
+    setRecentPrompt(prompt)
+    await onSent(prompt)
+  }
+
   const { darkMode } = useTheme();
 
   const openNav = () => {
@@ -36,6 +44,7 @@ const Sidebar = () => {
           ×
         </button>
         <button
+        onClick={() => newChat()}
           style={{
             backgroundColor: darkMode ? "#354c64" : "#eee",
             color: darkMode ? "#fff" : "black",
@@ -46,6 +55,15 @@ const Sidebar = () => {
         </button>
         <hr style={{ marginTop: "100px" }} />
         <h4 style={{ marginLeft: "15px" }}>Recent</h4>
+        {prevPrompts.map((item, index)=> {
+          return (
+            <>
+            <div onClick={() => loadPrompt(item)} className="recent-entry">
+              <p>{item}</p>
+            </div>
+            </>
+          )
+        })}
       </div>
       <div id="main">
         <button
