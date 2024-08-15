@@ -35,7 +35,7 @@ function Home({ showResult }) {
               fontSize: "24px",
               fontWeight: "bold",
               letterSpacing: "2px",
-              paddingTop: "100px",
+              paddingTop: "30px",
               transformOrigin: "center",
               animation: "slideInAndGrow 0.5s ease-out forwards",
               color: darkMode ? "white" : "black", // Dark mode için renk ayarı
