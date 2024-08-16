@@ -9,7 +9,7 @@ import { useContext } from "react";
 import { Context } from "./context/Context";
 
 function App() {
-  const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context);
+  const { showResult } = useContext(Context);
 
   return (
     <ThemeProvider>
