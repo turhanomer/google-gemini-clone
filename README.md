@@ -1,8 +1,25 @@
-# React + Vite
+<p align="center">
+  <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+    <img width="180" src="https://vitejs.dev/logo.svg" alt="Vite logo">
+  </a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Google Gemini AI Clone
+This repository is a chatbot project made using the api of google gemini ai. 
+- React.js, Tailwind.css, Bootstrap libraries and Gemini API are used
+  
+## Installation
+```bash
+$ npm create vite@latest
+$ npx create-react-app my-app
 
-Currently, two official plugins are available:
+$ npm install -D tailwindcss
+$ npx tailwindcss init
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+$npm i bootstrap@5.3.3
+```
+## Running The App
+```bash
+$ npm run dev
+```
+To view in the browser http://localhost:3000
