@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import run from "../config/Gemini.jsx";
 
 export const Context = createContext();
@@ -18,9 +18,9 @@ const ContextProvider = (props) => {
   };
 
   const newChat = () => {
-    setLoading(false)
-    setShowResult(false)
-  }
+    setLoading(false);
+    setShowResult(false);
+  };
 
   const onSent = async (prompt) => {
     setResultData("");
@@ -31,11 +31,10 @@ const ContextProvider = (props) => {
     if (prompt !== undefined) {
       response = await run(prompt);
       setRecentPrompt(prompt);
-    }
-    else{
-      setPreviousPromts(prev=>[...prev, input])
-      setRecentPrompt(input)
-      response = await run(input)
+    } else {
+      setPreviousPromts((prev) => [...prev, input]);
+      setRecentPrompt(input);
+      response = await run(input);
     }
     let responseArray = response.split("**");
     let newResponse = "";
@@ -71,11 +70,6 @@ const ContextProvider = (props) => {
     setInput,
     newChat
   };
-
-  useEffect(() => {
-    onSent("what is react js");
-    setShowResult(false);
-  }, []);
 
   return (
     <Context.Provider value={contextValue}>{props.children}</Context.Provider>
