@@ -16,7 +16,7 @@ $ npx create-react-app my-app
 $ npm install -D tailwindcss
 $ npx tailwindcss init
 
-$npm i bootstrap@5.3.3
+$ npm i bootstrap@5.3.3
 ```
 ## Running The App
 ```bash
